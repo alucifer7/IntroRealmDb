@@ -1,3 +1,10 @@
 <resources>
+
     <string name="app_name">Intro RealmDB</string>
+
+    <!--region ACTIVITY MAIN-->
+    <string name="ac_main_hint_summary">Summary</string>
+    <string name="ac_main_btn_create">CREATE ITEM</string>
+    <!--endregion-->
+
 </resources>
