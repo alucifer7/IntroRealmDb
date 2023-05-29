@@ -66,4 +66,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_label_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/padding_10"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:layout_marginStart="@dimen/margin_start_20"
+        android:layout_marginEnd="@dimen/margin_end_20"
+        android:background="@drawable/destaque_suave"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txt_iscompleted"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ITEMS"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_20"
+            android:text="SUMMARY"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_iscompleted"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_itens"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:listitem="@layout/layout_items"
+            tools:itemCount="6"
+            app:layout_constraintTop_toBottomOf="@+id/txt_iscompleted"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
